@@ -12,7 +12,7 @@ A powerful extension for Inkscape that allows you to easily create responsive gr
 - Add **padding** to the grid for better spacing control.
 - **Responsive**: Works well for any canvas size in Inkscape.
 
-## Installation
+### Installation
 
 1. Download the latest release from the [GitHub repository](https://github.com/seu-usuario/responsive-grid-creator).
 2. Place the `.inx` file in your `~/.config/inkscape/extensions/` directory (for Linux) or the appropriate directory for your OS.
