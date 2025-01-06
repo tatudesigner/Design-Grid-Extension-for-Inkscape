@@ -1,7 +1,7 @@
 # Responsive Grid Creator
 
 A powerful extension for Inkscape that allows you to easily create responsive grids with customizable columns, rows, gutters, and padding. Ideal for designers and developers who need to generate grids for responsive layouts.
-[REFERENCES/image1.png](https://github.com/tatudesigner/Responsive-Grid-Extension-for-Inkscape/blob/9a2fd3947169ac5cd5922962a983516dd66e0532/REFERENCES/image1.png)
+| <img src="./REFERENCES/image1.png"  width="600"> |
 ## Features
 - Create grids with customizable **columns** or **rows**.
 - Set the **number of columns/rows** (count).
