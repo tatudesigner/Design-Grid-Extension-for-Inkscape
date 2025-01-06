@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Responsive Grid Creator</name>
+  <id>org.inkscape.render.responsive_grid</id>
+
+  <!-- Parâmetros da extensão -->
+  <param name="grid_type" type="enum" gui-text="Grid Type:" default="columns">
+    <option value="columns">Columns</option>
+    <option value="rows">Rows</option>
+  </param>
+  <param name="columns" type="int" gui-text="Count:" min="1" max="50" default="12">12</param>
+  <param name="column_width" type="float" gui-text="Width (px):" min="1" max="1000" default="50">50</param>
+  <param name="gutter" type="float" gui-text="Gutter (px):" min="0" max="500" default="16">16</param>
+  <param name="padding_width" type="float" gui-text="Padding (px):" min="0" max="500" default="10">10</param>
+
+  <!-- Adicionando um rótulo para o preenchimento -->
+  <label appearance="header" gui-text="Fill:">Fill:</label>
+  <param name="fill_color" type="color" gui-text="Choose a color:" default="#FF0000">#FF0000</param>
+
+  <!-- Menu e efeito -->
+  <effect>
+    <object-type>all</object-type>
+    <effects-menu>
+      <submenu name="Render">
+      </submenu>
+    </effects-menu>
+  </effect>
+
+  <!-- Script associado -->
+  <script>
+    <command location="inx" interpreter="python">responsive_grid.py</command>
+  </script>
+</inkscape-extension>
