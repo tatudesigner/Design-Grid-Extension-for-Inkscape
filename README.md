@@ -31,16 +31,6 @@ A powerful extension for Inkscape that allows you to easily create responsive gr
     - **Padding**: Optionally, add padding to the grid.
 4. Click **Apply** to create the grid.
 
-## Contributing
-
-1. Fork this repository.
-2. Create a new branch for your changes (`git checkout -b feature/my-feature`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature/my-feature`).
-5. Open a pull request.
-
-Please make sure to follow the coding style used in the project and provide clear commit messages.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
