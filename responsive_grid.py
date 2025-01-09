@@ -23,9 +23,9 @@ class ResponsiveGrid(inkex.EffectExtension):
         pars.add_argument("--grid_type", type=str, default="columns", help="Grid Type: Columns or Rows")
         pars.add_argument("--columns", type=int, default=12, help="Number of columns/rows")
         pars.add_argument("--column_width", type=float, default=50, help="Width of each column/row (px)")
-        pars.add_argument("--gutter", type=float, default=20, help="Gutter width (px)")
+        pars.add_argument("--gutter", type=float, default=16, help="Gutter width (px)")
         pars.add_argument("--padding_width", type=float, default=10, help="Width of padding columns (px)")
-        pars.add_argument("--fill_color", type=inkex.Color, default=inkex.Color("#ff00801a"), help="Fill color of the grid")
+        pars.add_argument("--fill_color", type=inkex.Color, default=inkex.Color("#ff00661a"), help="Fill color of the grid")
 
     def effect(self):
         canvas_width, canvas_height = self.get_canvas_dimensions()
@@ -37,12 +37,12 @@ class ResponsiveGrid(inkex.EffectExtension):
             return
 
         margin = self.calculate_margin(canvas_width if grid_type == "columns" else canvas_height, count, size, gutter)
-        self.remove_existing_grid()
-        
+        grid_number = self.get_next_grid_number()
+
         if grid_type == "columns":
-            self.create_columns_grid(count, size, gutter, padding_width, fill_color, margin, canvas_height)
+            self.create_columns_grid(count, size, gutter, padding_width, fill_color, margin, canvas_height, grid_number)
         elif grid_type == "rows":
-            self.create_rows_grid(count, size, gutter, padding_width, fill_color, margin, canvas_width)
+            self.create_rows_grid(count, size, gutter, padding_width, fill_color, margin, canvas_width, grid_number)
 
     def get_canvas_dimensions(self):
         """Retrieve the canvas dimensions in pixels."""
@@ -71,16 +71,20 @@ class ResponsiveGrid(inkex.EffectExtension):
         total_size = (count * size) + (gutter * (count - 1))
         return (canvas_size - total_size) / 2
 
-    def remove_existing_grid(self):
-        """Remove existing grid layers from the SVG."""
-        grids = self.svg.xpath('//svg:g[@inkscape:label="Responsive Grid"]', namespaces=inkex.NSS)
-        for grid in grids:
-            grid.getparent().remove(grid)
+    def get_next_grid_number(self):
+        """Determine the next grid number based on existing grids."""
+        existing_grids = self.svg.xpath('//svg:g[starts-with(@inkscape:label, "Grid ")]', namespaces=inkex.NSS)
+        numbers = [
+            int(grid.get('inkscape:label').split(' ')[1])
+            for grid in existing_grids
+            if grid.get('inkscape:label').split(' ')[1].isdigit()
+        ]
+        return max(numbers, default=0) + 1
 
-    def create_columns_grid(self, count, width, gutter, padding_width, fill_color, margin, canvas_height):
+    def create_columns_grid(self, count, width, gutter, padding_width, fill_color, margin, canvas_height, grid_number):
         """Create a responsive columns grid."""
         grid_group = Layer()
-        grid_group.set('inkscape:label', 'Responsive Grid')
+        grid_group.set('inkscape:label', f'Grid {grid_number}')
         grid_group.set('sodipodi:insensitive', 'true')
 
         x = margin
@@ -100,10 +104,10 @@ class ResponsiveGrid(inkex.EffectExtension):
 
         self.svg.append(grid_group)
 
-    def create_rows_grid(self, count, height, gutter, padding_width, fill_color, margin, canvas_width):
+    def create_rows_grid(self, count, height, gutter, padding_width, fill_color, margin, canvas_width, grid_number):
         """Create a responsive rows grid."""
         grid_group = Layer()
-        grid_group.set('inkscape:label', 'Responsive Grid')
+        grid_group.set('inkscape:label', f'Grid {grid_number}')
         grid_group.set('sodipodi:insensitive', 'true')
 
         y = margin
@@ -132,7 +136,6 @@ class ResponsiveGrid(inkex.EffectExtension):
         rect.set("height", str(height / CONVERSIONS[self.svg.unit]))
         rect.set("style", f"fill:{fill_color.to_rgb()};fill-opacity:{fill_color.alpha};stroke:none")
         return rect
-
 
 if __name__ == '__main__':
     ResponsiveGrid().run()
