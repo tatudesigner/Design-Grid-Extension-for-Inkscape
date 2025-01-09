@@ -4,18 +4,18 @@
   <id>org.inkscape.render.responsive_grid</id>
 
   <!-- Parâmetros da extensão -->
-  <param name="grid_type" type="enum" gui-text="Grid Type:" default="columns">
+  <param name="grid_type" type="optiongroup" _gui-text="Grid Type: " default="columns">
     <option value="columns">Columns</option>
     <option value="rows">Rows</option>
   </param>
-  <param name="columns" type="int" gui-text="Count:" min="1" max="50" default="12">12</param>
-  <param name="column_width" type="float" gui-text="Width (px):" min="1" max="1000" default="50">50</param>
-  <param name="gutter" type="float" gui-text="Gutter (px):" min="0" max="500" default="16">16</param>
-  <param name="padding_width" type="float" gui-text="Padding (px):" min="0" max="500" default="10">10</param>
+  <param name="columns" type="int" _gui-text="Count:" min="1" max="50" default="12">12</param>
+  <param name="column_width" type="float" _gui-text="Width (px):" min="1" max="2000" default="50">50</param>
+  <param name="gutter" type="float" _gui-text="Gutter (px):" min="0" max="500" default="16">16</param>
+  <param name="padding_width" type="float" _gui-text="Padding (px):" min="0" max="500" default="10">10</param>
 
   <!-- Adicionando um rótulo para o preenchimento -->
-  <label appearance="header" gui-text="Fill:">Fill:</label>
-  <param name="fill_color" type="color" gui-text="Choose a color:" default="#FF0000">#FF0000</param>
+  <label appearance="header" _gui-text="Fill:">Fill:</label>
+  <param name="fill_color" type="color" _gui-text="Choose a color:" default="#ff00661a">#ff00661a</param>
 
   <!-- Menu e efeito -->
   <effect>
