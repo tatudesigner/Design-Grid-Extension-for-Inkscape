@@ -38,10 +38,10 @@ While Inkscape isn't primarily a prototyping tool like Figma, its versatility ma
 4. Click **Apply** to generate your responsive grid.
 
 ## 📝 License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the **GNU General Public License v3.0**. You can redistribute and modify the code under the terms of this license.
+
+The full text of the GNU General Public License v3.0 can be found at: [GNU GPL-3.0 License](https://www.gnu.org/licenses/gpl-3.0.html).
 
 ## 📬 Contact
 Have questions, suggestions, or want to contribute? Feel free to reach out!
 - **Email:** tatudesigner@gmail.com
-
-We'd love to hear your feedback and see how you're using the Responsive Grid Creator!
