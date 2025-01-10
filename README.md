@@ -5,6 +5,7 @@ A **powerful extension for Inkscape** that empowers designers and developers to 
 <img src="./REFERENCES/image1.png" width="800" alt="Responsive Grid Creator Preview">
 
 ## 🌟 Features
+
 - **Customizable Grid Types:** Create grids with **columns** or **rows**.
 - **Flexible Settings:**
   - Define the **number** of columns or rows.
@@ -15,9 +16,11 @@ A **powerful extension for Inkscape** that empowers designers and developers to 
 - Ideal for **web layouts**, **print design**, or any grid-based projects.
   
 ## 🚀 Why Use This Extension?
+
 While Inkscape isn't primarily a prototyping tool like Figma, its versatility makes it a great choice for designers working on both **digital** and **print projects**. The Responsive Grid Creator bridges the gap, offering a solution for quickly generating grids tailored to your needs. Whether you're building a web layout or designing brochures, this tool saves time and ensures consistency.
 
 ## 📥 Installation
+
 1. **Download the latest release** from the GitHub repository.
 2. Place the .inx file in the appropriate extensions directory for your OS:
     - **Linux:** ~/.config/inkscape/extensions/
@@ -27,6 +30,7 @@ While Inkscape isn't primarily a prototyping tool like Figma, its versatility ma
 4. **Restart Inkscape** to load the extension.
     
 ## 🛠️ How to Use
+
 1. Open Inkscape.
 2. Navigate to **Extensions** > **Render** > **Responsive Grid Creator**.
 3. Customize your grid settings:
@@ -38,10 +42,12 @@ While Inkscape isn't primarily a prototyping tool like Figma, its versatility ma
 4. Click **Apply** to generate your responsive grid.
 
 ## 📝 License
+
 This project is licensed under the **GNU General Public License v3.0**. You can redistribute and modify the code under the terms of this license.
 
 The full text of the GNU General Public License v3.0 can be found at: [GNU GPL-3.0 License](https://www.gnu.org/licenses/gpl-3.0.html).
 
 ## 📬 Contact
+
 Have questions, suggestions, or want to contribute? Feel free to reach out!
 - **Email:** tatudesigner@gmail.com
