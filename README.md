@@ -20,9 +20,9 @@ While Inkscape isn't primarily a prototyping tool like Figma, its versatility ma
 ## 📥 Installation
 1. **Download the latest release** from the GitHub repository.
 2. Place the .inx file in the appropriate extensions directory for your OS:
-  - **Linux:** ~/.config/inkscape/extensions/
-  - **Windows:** %APPDATA%\inkscape\extensions\
-  - **MacOS:** ~/Library/Application Support/org.inkscape/extensions/
+    - **Linux:** ~/.config/inkscape/extensions/
+    - **Windows:** %APPDATA%\inkscape\extensions\
+    - **MacOS:** ~/Library/Application Support/org.inkscape/extensions/
 3. Ensure that the responsive_grid.py script is in the same directory as the .inx file.
 4. **Restart Inkscape** to load the extension.
     
@@ -30,21 +30,13 @@ While Inkscape isn't primarily a prototyping tool like Figma, its versatility ma
 1. Open Inkscape.
 2. Navigate to **Extensions** > **Render** > **Responsive Grid Creator**.
 3. Customize your grid settings:
-  - **Grid Type:** Choose between **Columns** or **Rows**.
-  - **Count:** Specify the number of columns/rows.
-  - **Width:** Set the width for each column/row.
-  - **Gutter:** Adjust spacing between columns/rows.
-  - **Padding:** Add optional padding for better spacing control.
+    - **Grid Type:** Choose between **Columns** or **Rows**.
+    - **Count:** Specify the number of columns/rows.
+    - **Width:** Set the width for each column/row.
+    - **Gutter:** Adjust spacing between columns/rows.
+    - **Padding:** Add optional padding for better spacing control.
 4. Click **Apply** to generate your responsive grid.
-1. Open Inkscape.
-2. Navigate to **Extensions** > **Render** > **Responsive Grid Creator**.
-3. Customize the grid:
-    - **Grid Type**: Choose between **Columns** or **Rows**.
-    - **Count**: Define the number of columns/rows.
-    - **Width**: Set the width of each column/row.
-    - **Gutter**: Adjust the space between columns/rows.
-    - **Padding**: Optionally, add padding to the grid.
-4. Click **Apply** to create the grid.
+
 ## 📝 License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
