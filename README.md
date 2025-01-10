@@ -36,7 +36,15 @@ While Inkscape isn't primarily a prototyping tool like Figma, its versatility ma
   - **Gutter:** Adjust spacing between columns/rows.
   - **Padding:** Add optional padding for better spacing control.
 4. Click **Apply** to generate your responsive grid.
-
+1. Open Inkscape.
+2. Navigate to **Extensions** > **Render** > **Responsive Grid Creator**.
+3. Customize the grid:
+    - **Grid Type**: Choose between **Columns** or **Rows**.
+    - **Count**: Define the number of columns/rows.
+    - **Width**: Set the width of each column/row.
+    - **Gutter**: Adjust the space between columns/rows.
+    - **Padding**: Optionally, add padding to the grid.
+4. Click **Apply** to create the grid.
 ## 📝 License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
