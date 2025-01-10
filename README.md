@@ -1,11 +1,10 @@
 # Responsive Grid Creator
 
 A **powerful extension for Inkscape** that empowers designers and developers to create **responsive grids** with ease. Whether you're designing layouts for the web or creating print materials, this extension offers the flexibility and control needed for precise grid-based design.
-
++ teste
 
 <img src="./REFERENCES/image1.png" width="800" alt="Responsive Grid Creator Preview">
 
-- [ ] isso
 ## 🌟 Features
 
 - **Customizable Grid Types:** Create grids with **columns** or **rows**.
