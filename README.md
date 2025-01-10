@@ -5,7 +5,7 @@ A **powerful extension for Inkscape** that empowers designers and developers to 
 
 <img src="./REFERENCES/image1.png" width="800" alt="Responsive Grid Creator Preview">
 
-
+- [] isso
 ## 🌟 Features
 
 - **Customizable Grid Types:** Create grids with **columns** or **rows**.
