@@ -4,6 +4,7 @@ A **powerful extension for Inkscape** that empowers designers and developers to 
 
 <img src="./REFERENCES/image1.png" width="800" alt="Responsive Grid Creator Preview">
 
+
 ## 🌟 Features
 
 - **Customizable Grid Types:** Create grids with **columns** or **rows**.
@@ -14,10 +15,12 @@ A **powerful extension for Inkscape** that empowers designers and developers to 
   - Add optional **padding** for enhanced spacing control.
 - **Responsive Design:** Works seamlessly with any canvas size in Inkscape.
 - Ideal for **web layouts**, **print design**, or any grid-based projects.
-  https://github.com/tatudesigner/Responsive-Grid-Extension-for-Inkscape/blob/main/REFERENCES/Figma2.png
+
+
 ## 🚀 Why Use This Extension?
 
 While Inkscape isn't primarily a prototyping tool like Figma, its versatility makes it a great choice for designers working on both **digital** and **print projects**. The Responsive Grid Creator bridges the gap, offering a solution for quickly generating grids tailored to your needs. Whether you're building a web layout or designing brochures, this tool saves time and ensures consistency.
+
 
 ## 📥 Installation
 
@@ -28,7 +31,8 @@ While Inkscape isn't primarily a prototyping tool like Figma, its versatility ma
     - **MacOS:** ~/Library/Application Support/org.inkscape/extensions/
 3. Ensure that the responsive_grid.py script is in the same directory as the .inx file.
 4. **Restart Inkscape** to load the extension.
-    
+
+  
 ## 🛠️ How to Use
 
 1. Open Inkscape.
@@ -41,11 +45,13 @@ While Inkscape isn't primarily a prototyping tool like Figma, its versatility ma
     - **Padding:** Add optional padding for better spacing control.
 4. Click **Apply** to generate your responsive grid.
 
+
 ## 📝 License
 
 This project is licensed under the **GNU General Public License v3.0**. You can redistribute and modify the code under the terms of this license.
 
 The full text of the GNU General Public License v3.0 can be found at: [GNU GPL-3.0 License](https://www.gnu.org/licenses/gpl-3.0.html).
+
 
 ## 📬 Contact
 
