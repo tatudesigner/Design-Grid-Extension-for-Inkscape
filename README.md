@@ -11,30 +11,30 @@ A **powerful extension for Inkscape** that empowers designers and developers to 
 - **Customizable Grid Options:** Create grids with **columns** or **rows**.
 - **Flexible Settings:**
   - Specify the **number** of columns or rows.
-  - Adjust the **width** of each column/row.
-  - Configure **gutters** for spacing between columns/rows.
-  - Add optional **padding** for enhanced control.
-- **Responsive Design:** Adapts seamlessly to any Inkscape canvas size.
-- Perfect for **web layouts**, **print design**, or any grid-based project.
+  - Adjust the **width/height** of each column/row.
+  - Set **gutters** for spacing between columns/rows.
+  - Add optional **padding** for enhanced spacing control.
+- **Responsive Design:** Works seamlessly with any canvas size in Inkscape.
+- Ideal for **web layouts, print design,** or any grid-based projects.
 
 ---
 
-## 🤔 Why This Extension Was Created
+## 🤔 Why Was This Extension Created
 
-While Inkscape offers tools for creating grids with guides, they can sometimes feel unintuitive and clutter the workspace. Inspired by the sleek grid generation feature in tools like Figma, I wanted to develop something similar for Inkscape—**modern, clean, and intuitive**. This extension ensures that even novice users can easily generate functional and visually appealing grids for their designs.
+While Inkscape already provides options for creating grids with guides, these can often feel unintuitive, cluttering the workspace with too many lines. After seeing the clean and modern grid functionality in tools like Figma, I wanted to bring a similar experience to Inkscape. The goal was to create a tool that is **intuitive, functional, and user-friendly,** enabling even beginners to incorporate grid-based design seamlessly into their projects.
 
 ---
 
 ## 🚀 Why Use This Extension?
 
-Although Inkscape isn't primarily a prototyping tool like Figma, its versatility makes it an excellent option for both **digital** and **print design**. The Design Grid fills the gap, providing an easy-to-use solution for quickly generating custom grids, saving time, and ensuring design consistency.
+Although Inkscape isn't primarily a prototyping tool like Figma, its versatility makes it a great choice for designers working on both **digital** and **print projects**. The Responsive Grid Creator bridges the gap, offering a solution for quickly generating grids tailored to your needs. Whether you're building a web layout or designing brochures, this tool saves time and ensures consistency.
 
 ---
 
 ## 📥 Installation
 
 1. **Download the latest release** from the GitHub repository.
-2. Place the `.inx` file in the appropriate extensions directory for your operating system:
+2. Place the `.inx` file in the appropriate directory for your operating system:
     - **Linux:** `~/.config/inkscape/extensions/`
     - **Windows:** `%APPDATA%\inkscape\extensions\`
     - **MacOS:** `~/Library/Application Support/org.inkscape/extensions/`
@@ -50,11 +50,11 @@ Although Inkscape isn't primarily a prototyping tool like Figma, its versatility
 3. Customize your grid settings:
     - **Grid Type:** Choose between **Columns** or **Rows**.
     - **Count:** Specify the number of columns/rows.
-    - **Width:** Set the width of each column/row.
+    - **Width/height:** Set the width/height of each column/row.
     - **Gutter:** Adjust spacing between columns/rows.
     - **Padding:** Add optional padding for better spacing control.
 4. **Enable snapping:** Ensure the **snapping tool** (top-right corner of Inkscape) is active for better alignment and usability of the grid.
-5. Click **Apply** to generate your responsive grid.
+5. Click **Apply** to generate your grid.
 
 ---
 
