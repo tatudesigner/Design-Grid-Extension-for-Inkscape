@@ -14,7 +14,7 @@ A **powerful extension for Inkscape** that empowers designers and developers to 
   - Add optional **padding** for enhanced spacing control.
 - **Responsive Design:** Works seamlessly with any canvas size in Inkscape.
 - Ideal for **web layouts**, **print design**, or any grid-based projects.
-  
+  https://github.com/tatudesigner/Responsive-Grid-Extension-for-Inkscape/blob/main/REFERENCES/Figma2.png
 ## 🚀 Why Use This Extension?
 
 While Inkscape isn't primarily a prototyping tool like Figma, its versatility makes it a great choice for designers working on both **digital** and **print projects**. The Responsive Grid Creator bridges the gap, offering a solution for quickly generating grids tailored to your needs. Whether you're building a web layout or designing brochures, this tool saves time and ensures consistency.
