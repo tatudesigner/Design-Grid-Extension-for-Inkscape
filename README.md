@@ -34,7 +34,7 @@ Although Inkscape isn't primarily a prototyping tool like Figma, its versatility
 ## 📥 Installation
 
 1. **Download the latest release** from the GitHub repository.
-2. Place the `.inx` file in the appropriate directory for your operating system:
+2. Place the `design_grid.inx` file in the appropriate directory for your operating system:
     - **Linux:** `~/.config/inkscape/extensions/`
     - **Windows:** `%APPDATA%\inkscape\extensions\`
     - **MacOS:** `~/Library/Application Support/org.inkscape/extensions/`
