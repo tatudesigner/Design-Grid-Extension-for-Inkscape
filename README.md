@@ -17,6 +17,8 @@ A **powerful extension for Inkscape** that empowers designers and developers to 
 - **Responsive Design:** Works seamlessly with any canvas size in Inkscape.
 - Ideal for **web layouts, print design,** or any grid-based projects.
 
+![Design Grid Preview](./REFERENCES/image2.png)
+
 ---
 
 ## 🤔 Why Was This Extension Created
