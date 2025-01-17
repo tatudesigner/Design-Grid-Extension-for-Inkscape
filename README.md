@@ -25,6 +25,8 @@ A **powerful extension for Inkscape** that empowers designers and developers to 
 
 While Inkscape already provides options for creating grids with guides, these can often feel unintuitive, cluttering the workspace with too many lines. After seeing the clean and modern grid functionality in tools like Figma, I wanted to bring a similar experience to Inkscape. The goal was to create a tool that is **intuitive, functional, and user-friendly,** enabling even beginners to incorporate grid-based design seamlessly into their projects.
 
+![Design Grid Preview](./REFERENCES/image3.png)
+
 ---
 
 ## 🚀 Why Use This Extension?
