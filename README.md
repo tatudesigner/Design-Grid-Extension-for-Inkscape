@@ -57,11 +57,10 @@ Although Inkscape isn't primarily a prototyping tool like Figma, its versatility
     - **Width/height:** Set the width/height of each column/row.
     - **Gutter:** Adjust spacing between columns/rows.
     - **Padding:** Add optional padding for better spacing control.
-4. **Enable snapping:** Ensure the **snapping tool** (top-right corner of Inkscape) is active for better alignment and usability of the grid.
+4. Click **Apply** to generate your grid.
+5. **Enable snapping:** Ensure the **snapping tool** (top-right corner of Inkscape) is active for better alignment and usability of the grid.
 
 ![Design Grid Preview](./REFERENCES/snapping.png)
-   
-6. Click **Apply** to generate your grid.
 
 ---
 
