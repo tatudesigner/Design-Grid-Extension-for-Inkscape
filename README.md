@@ -31,7 +31,7 @@ While Inkscape already provides options for creating grids with guides, these ca
 
 ## 🚀 Why Use This Extension?
 
-Although Inkscape isn't primarily a prototyping tool like Figma, its versatility makes it a great choice for designers working on both **digital** and **print projects**. The Responsive Grid Creator bridges the gap, offering a solution for quickly generating grids tailored to your needs. Whether you're building a web layout or designing brochures, this tool saves time and ensures consistency.
+Although Inkscape isn't primarily a prototyping tool like Figma, its versatility makes it a great choice for designers working on both **digital** and **print projects**. The Design Grid bridges the gap, offering a solution for quickly generating grids tailored to your needs. Whether you're building a web layout or designing brochures, this tool saves time and ensures consistency.
 
 ---
 
