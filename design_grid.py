@@ -44,7 +44,7 @@ class DesignGrid(inkex.EffectExtension):
         pars.add_argument("--fill_color", type=inkex.Color, default=inkex.Color("#ff00661a"), help="Fill color of the grid")
 
     def effect(self):
-        canvas_width, canvas_height = self.get_canvas_dimensions()
+        page_width, page_height = self.get_page_dimensions()
         grid_type = self.options.grid_type
         count, size, gutter, padding_width, fill_color = self.get_user_parameters()
 
@@ -52,16 +52,16 @@ class DesignGrid(inkex.EffectExtension):
             inkex.errormsg("Invalid parameters. Please check your inputs.")
             return
 
-        margin = self.calculate_margin(canvas_width if grid_type == "columns" else canvas_height, count, size, gutter)
+        margin = self.calculate_margin(page_width if grid_type == "columns" else page_height, count, size, gutter)
         grid_number = self.get_next_grid_number()
 
         if grid_type == "columns":
-            self.create_columns_grid(count, size, gutter, padding_width, fill_color, margin, canvas_height, grid_number)
+            self.create_columns_grid(count, size, gutter, padding_width, fill_color, margin, page_height, grid_number)
         elif grid_type == "rows":
-            self.create_rows_grid(count, size, gutter, padding_width, fill_color, margin, canvas_width, grid_number)
+            self.create_rows_grid(count, size, gutter, padding_width, fill_color, margin, page_width, grid_number)
 
-    def get_canvas_dimensions(self):
-        """Retrieve the canvas dimensions in pixels."""
+    def get_page_dimensions(self):
+        """Retrieve the page dimensions in pixels."""
         pixel_conversion_factor = CONVERSIONS[self.svg.unit]
         return (
             self.svg.viewbox_width * pixel_conversion_factor,
@@ -82,10 +82,10 @@ class DesignGrid(inkex.EffectExtension):
         """Validate input parameters."""
         return count > 0 and size > 0 and gutter >= 0 and padding_width >= 0
 
-    def calculate_margin(self, canvas_size, count, size, gutter):
+    def calculate_margin(self, page_size, count, size, gutter):
         """Calculate the margin for centering the grid."""
         total_size = (count * size) + (gutter * (count - 1))
-        return (canvas_size - total_size) / 2
+        return (page_size - total_size) / 2
 
     def get_next_grid_number(self):
         """Determine the next grid number based on existing grids."""
@@ -97,7 +97,7 @@ class DesignGrid(inkex.EffectExtension):
         ]
         return max(numbers, default=0) + 1
 
-    def create_columns_grid(self, count, width, gutter, padding_width, fill_color, margin, canvas_height, grid_number):
+    def create_columns_grid(self, count, width, gutter, padding_width, fill_color, margin, page_height, grid_number):
         """Create a responsive columns grid."""
         grid_group = Layer()
         grid_group.set('inkscape:label', f'Grid {grid_number}')
@@ -106,13 +106,13 @@ class DesignGrid(inkex.EffectExtension):
         x = margin
         for _ in range(count):
             # Create the main column
-            column = self.create_rectangle(x, 0, width, canvas_height, fill_color)
+            column = self.create_rectangle(x, 0, width, page_height, fill_color)
             grid_group.append(column)
 
             # Create padding rectangles
             if padding_width > 0:
-                left_padding = self.create_rectangle(x, 0, padding_width, canvas_height, fill_color)
-                right_padding = self.create_rectangle(x + width - padding_width, 0, padding_width, canvas_height, fill_color)
+                left_padding = self.create_rectangle(x, 0, padding_width, page_height, fill_color)
+                right_padding = self.create_rectangle(x + width - padding_width, 0, padding_width, page_height, fill_color)
                 grid_group.append(left_padding)
                 grid_group.append(right_padding)
 
@@ -120,7 +120,7 @@ class DesignGrid(inkex.EffectExtension):
 
         self.svg.append(grid_group)
 
-    def create_rows_grid(self, count, height, gutter, padding_width, fill_color, margin, canvas_width, grid_number):
+    def create_rows_grid(self, count, height, gutter, padding_width, fill_color, margin, page_width, grid_number):
         """Create a responsive rows grid."""
         grid_group = Layer()
         grid_group.set('inkscape:label', f'Grid {grid_number}')
@@ -129,13 +129,13 @@ class DesignGrid(inkex.EffectExtension):
         y = margin
         for _ in range(count):
             # Create the main row
-            row = self.create_rectangle(0, y, canvas_width, height, fill_color)
+            row = self.create_rectangle(0, y, page_width, height, fill_color)
             grid_group.append(row)
 
             # Create padding rectangles
             if padding_width > 0:
-                top_padding = self.create_rectangle(0, y, canvas_width, padding_width, fill_color)
-                bottom_padding = self.create_rectangle(0, y + height - padding_width, canvas_width, padding_width, fill_color)
+                top_padding = self.create_rectangle(0, y, page_width, padding_width, fill_color)
+                bottom_padding = self.create_rectangle(0, y + height - padding_width, page_width, padding_width, fill_color)
                 grid_group.append(top_padding)
                 grid_group.append(bottom_padding)
 
