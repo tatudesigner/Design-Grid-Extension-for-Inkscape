@@ -14,7 +14,7 @@ A **powerful extension for Inkscape** that empowers designers and developers to 
   - Adjust the **width/height** of each column/row.
   - Set **gutters** for spacing between columns/rows.
   - Add optional **padding** for enhanced spacing control.
-- **Responsive Design:** Works seamlessly with any canvas size in Inkscape.
+- **Responsive Design:** Works seamlessly with any page size in Inkscape.
 - Ideal for **web layouts, print design,** or any grid-based projects.
 
 ![Design Grid Preview](./REFERENCES/image2.png)
