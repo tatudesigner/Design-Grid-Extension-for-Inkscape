@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
   <name>Design Grid</name>
-  <id>org.inkscape.render.design_grid</id>
+  <id>tatudesigner.design_grid</id>
 
   <!-- Extension parameters -->
   <param name="grid_type" type="optiongroup" _gui-text="Grid Type: " default="columns">
