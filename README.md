@@ -62,6 +62,10 @@ Although Inkscape isn't primarily a prototyping tool like Figma, its versatility
 
 ![Design Grid Preview](./REFERENCES/snapping.png)
 
+6. **New Grid Layers:** Each time you create a new grid, a new layer is automatically generated with the name **"Grid 1," "Grid 2,"** and so on. These layers are **locked** by default, so they won't interfere with your design work.
+
+![Design Grid Preview](./REFERENCES/grid_layer.png)
+
 ---
 
 ## 📝 License
