@@ -62,7 +62,9 @@ Although Inkscape isn't primarily a prototyping tool like Figma, its versatility
     - **Stretch Grid:** (New!) Enable to make the grid expand to fit the page.  
       > ⚠️ When Stretch Grid is enabled, the **Width/Height** setting is disabled.
     - **Margin:** Set the margin between the grid and the page edges (only active when "Stretch Grid" is enabled).
+    - 
 ![Design Grid Preview](./images/image4.png)
+
 4. Click **Apply** to generate your grid.
 5. **Enable snapping:** Ensure the **snapping tool** (top-right corner of Inkscape) is active for better alignment and usability of the grid.
 
