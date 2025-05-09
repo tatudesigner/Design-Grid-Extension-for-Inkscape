@@ -19,7 +19,7 @@ A **powerful extension for Inkscape** that empowers designers and developers to 
 - **Responsive Design:** Works seamlessly with any page size in Inkscape.
 - Ideal for **web layouts, print design,** or any grid-based projects.
 
-![Design Grid Preview](./README/images/image2.png)
+![Design Grid Preview](./images/image2.png)
 
 ---
 
@@ -27,7 +27,7 @@ A **powerful extension for Inkscape** that empowers designers and developers to 
 
 While Inkscape already provides options for creating grids with guides, these can often feel unintuitive, cluttering the workspace with too many lines. After seeing the clean and modern grid functionality in tools like Figma, I wanted to bring a similar experience to Inkscape. The goal was to create a tool that is **intuitive, functional, and user-friendly,** enabling even beginners to incorporate grid-based design seamlessly into their projects.
 
-![Design Grid Preview](./README/images/image3.png)
+![Design Grid Preview](./images/image3.png)
 
 ---
 
@@ -62,14 +62,15 @@ Although Inkscape isn't primarily a prototyping tool like Figma, its versatility
     - **Stretch Grid:** (New!) Enable to make the grid expand to fit the page.  
       > ⚠️ When Stretch Grid is enabled, the **Width/Height** setting is disabled.
     - **Margin:** Set the margin between the grid and the page edges (only active when "Stretch Grid" is enabled).
+![Design Grid Preview](./images/image4.png)
 4. Click **Apply** to generate your grid.
 5. **Enable snapping:** Ensure the **snapping tool** (top-right corner of Inkscape) is active for better alignment and usability of the grid.
 
-![Design Grid Preview](./README/images/snapping.png)
+![Design Grid Preview](./images/snapping.png)
 
 6. **New Grid Layers:** Each time you create a new grid, a new layer is automatically generated with the name **"Grid 1," "Grid 2,"** and so on. These layers are **locked** by default, so they won't interfere with your design work.
 
-![Design Grid Preview](./README/images/layers.png)
+![Design Grid Preview](./images/layers.png)
 
 ---
 
