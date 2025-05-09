@@ -2,7 +2,7 @@
 
 A **powerful extension for Inkscape** that empowers designers and developers to create **responsive grids** effortlessly. Whether you're designing for the web or working on print projects, this extension provides the flexibility and control required for precise, grid-based designs.
 
-![Design Grid Preview](./REFERENCES/image1.png)
+![Design Grid Preview](./README/images/image1.png)
 
 ---
 
@@ -14,18 +14,20 @@ A **powerful extension for Inkscape** that empowers designers and developers to 
   - Adjust the **width/height** of each column/row.
   - Set **gutters** for spacing between columns/rows.
   - Add optional **padding** for enhanced spacing control.
+  - **Stretch Grid:** (New!) Enable to make the grid expand to fit the page.  
+    > ⚠️ When Stretch Grid is enabled, the **Width/Height** setting is disabled.
 - **Responsive Design:** Works seamlessly with any page size in Inkscape.
 - Ideal for **web layouts, print design,** or any grid-based projects.
 
-![Design Grid Preview](./REFERENCES/image2.png)
+![Design Grid Preview](./README/images/image2.png)
 
 ---
 
-## 🤔 Why Was This Extension Created
+## 🤔 Why This Extension Was Created
 
 While Inkscape already provides options for creating grids with guides, these can often feel unintuitive, cluttering the workspace with too many lines. After seeing the clean and modern grid functionality in tools like Figma, I wanted to bring a similar experience to Inkscape. The goal was to create a tool that is **intuitive, functional, and user-friendly,** enabling even beginners to incorporate grid-based design seamlessly into their projects.
 
-![Design Grid Preview](./REFERENCES/image3.png)
+![Design Grid Preview](./README/images/image3.png)
 
 ---
 
@@ -57,15 +59,17 @@ Although Inkscape isn't primarily a prototyping tool like Figma, its versatility
     - **Width/height:** Set the width/height of each column/row.
     - **Gutter:** Adjust spacing between columns/rows.
     - **Padding:** Add optional padding for better spacing control.
+    - **Stretch Grid:** (New!) Enable to make the grid expand to fit the page.  
+      > ⚠️ When Stretch Grid is enabled, the **Width/Height** setting is disabled.
+    - **Margin:** Set the margin between the grid and the page edges (only active when "Stretch Grid" is enabled).
 4. Click **Apply** to generate your grid.
 5. **Enable snapping:** Ensure the **snapping tool** (top-right corner of Inkscape) is active for better alignment and usability of the grid.
 
-![Design Grid Preview](./REFERENCES/snapping.png)
-
+![Design Grid Preview](./README/images/snapping.png)
 
 6. **New Grid Layers:** Each time you create a new grid, a new layer is automatically generated with the name **"Grid 1," "Grid 2,"** and so on. These layers are **locked** by default, so they won't interfere with your design work.
 
-![Design Grid Preview](./REFERENCES/layers.png)
+![Design Grid Preview](./README/images/layers.png)
 
 ---
 
