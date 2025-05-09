@@ -2,7 +2,7 @@
 
 A **powerful extension for Inkscape** that empowers designers and developers to create **responsive grids** effortlessly. Whether you're designing for the web or working on print projects, this extension provides the flexibility and control required for precise, grid-based designs.
 
-![Design Grid Preview](./README/images/image1.png)
+![Design Grid Preview](./images/image1.png)
 
 ---
 
