@@ -87,4 +87,4 @@ The full text of the GNU GPL-3.0 license can be found here: [GNU GPL-3.0 License
 ## 📬 Contact
 
 Have questions, suggestions, or want to contribute? Feel free to reach out!
-- **Email:** heriton.agoncalves@gmail.com
+- **Email:** tatudesigner@gmail.com
