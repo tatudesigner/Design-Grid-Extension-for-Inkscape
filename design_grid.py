@@ -49,8 +49,15 @@ class DesignGrid(inkex.EffectExtension):
         count, size, gutter, padding_width, fill_color = self.get_user_parameters()
         margin = self.options.margin  # Get the user-defined margin
 
-        if not self.validate_parameters(count, size, gutter, padding_width):
+        if not self.validate_parameters(count, size, gutter, padding_width, margin):
             inkex.errormsg("Invalid parameters. Please check your inputs.")
+            return
+
+        page_size = page_width if grid_type == "columns" else page_height
+        if margin * 2 >= page_size:
+            inkex.errormsg(
+                "A margem informada é maior que a página. Reduza o valor de 'Margin' e tente novamente."
+            )
             return
 
         # No longer calculate margin here, use user-defined value
@@ -82,23 +89,18 @@ class DesignGrid(inkex.EffectExtension):
             self.options.fill_color
         )
 
-    def validate_parameters(self, count, size, gutter, padding_width):
+    def validate_parameters(self, count, size, gutter, padding_width, margin=0):
         """Validate input parameters."""
-        return count > 0 and size > 0 and gutter >= 0 and padding_width >= 0
-
-    def calculate_margin(self, page_size, count, size, gutter):
-        """Calculate the margin for centering the grid."""
-        total_size = (count * size) + (gutter * (count - 1))
-        return (page_size - total_size) / 2
+        return count > 0 and size > 0 and gutter >= 0 and padding_width >= 0 and margin >= 0
 
     def get_next_grid_number(self):
         """Determine the next grid number based on existing grids."""
         existing_grids = self.svg.xpath('//svg:g[starts-with(@inkscape:label, "Grid ")]', namespaces=inkex.NSS)
-        numbers = [
-            int(grid.get('inkscape:label').split(' ')[1])
-            for grid in existing_grids
-            if grid.get('inkscape:label').split(' ')[1].isdigit()
-        ]
+        numbers = []
+        for grid in existing_grids:
+            label_number = grid.get('inkscape:label').split(' ')[1]
+            if label_number.isdigit():
+                numbers.append(int(label_number))
         return max(numbers, default=0) + 1
 
     def create_columns_grid(self, count, width, gutter, padding_width, fill_color, margin, page_height, page_width, grid_number):
